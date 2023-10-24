@@ -1,0 +1,91 @@
+@keyframes rotate180 {
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate_180 {
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes hide {
+  from {
+    display: block;
+  }
+  to {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+}
+@keyframes show {
+  from {
+    display: none;
+    opacity: 0%;
+    transform: translateX(40px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+.direction__list {
+  margin: 0 auto;
+  max-width: 600px;
+
+  & svg {
+    font-size: 18px;
+    display: block;
+    color: #3447b3;
+    margin-right: 7px;
+    transition: all 0.5s ease-in-out;
+
+    &.open {
+      animation: 0.5s rotate180 linear;
+    }
+    &.close {
+      animation: 0.5s rotate_180 linear;
+    }
+  }
+  & .direction {
+    padding: 10px 23px;
+    background: #e9ecff;
+    // text-transform: capitalize;
+    margin-top: 16px;
+    border-radius: 5px;
+    color: #3447b3;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    & span::first-letter {
+      text-transform: capitalize;
+    }
+
+    &:hover {
+      background-color: #c5cdff;
+    }
+  }
+
+  & .departments {
+    padding: 10px 70px;
+    text-transform: capitalize;
+    transition: all 5s ease-in-out;
+
+    &.open {
+      animation: show 1000ms;
+      display: block;
+    }
+
+    &.close {
+      animation: hide 400ms;
+      display: none;
+    }
+
+    & svg {
+      font-size: 26px !important;
+    }
+  }
+}

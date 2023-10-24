@@ -1,0 +1,13 @@
+.create__user {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 12px;
+
+  & .role {
+    margin-bottom: 13px;
+  }
+
+  & .radio__items {
+    margin-top: 15px;
+  }
+}

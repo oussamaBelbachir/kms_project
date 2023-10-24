@@ -1,0 +1,19 @@
+.mainlayout {
+  display: flex;
+
+  &__right {
+    width: 100%;
+    margin-left: 300px;
+    transition: all 0.5s ease-in-out !important;
+
+    @media only screen and (max-width: 950px) {
+      & {
+        margin-left: 0px !important;
+      }
+    }
+  }
+
+  &__sidebar {
+    background-color: red;
+  }
+}

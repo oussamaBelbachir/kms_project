@@ -1,0 +1,43 @@
+.profile {
+  // padding: 10px;
+  & .backgroundImg {
+    height: 250px;
+    background-size: cover;
+  }
+  & .image {
+    margin: 0 auto 18px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin-top: -75px;
+  }
+
+  & .fullname {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 19px;
+    // color: #3447b3;
+  }
+
+  & .role {
+    background-color: #d8deff;
+    color: #3447b3;
+    width: fit-content;
+    padding: 5px 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin: 20px auto 0;
+
+    & svg {
+      margin-right: 7px;
+    }
+  }
+
+  & .directions {
+    margin-top: 22px;
+  }
+}

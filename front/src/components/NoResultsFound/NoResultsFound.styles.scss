@@ -1,0 +1,28 @@
+.no_results_found {
+  width: fit-content;
+  margin: 20px auto;
+
+  // background: #eee;
+  padding: 20px 30px;
+  border-radius: 18px;
+
+  & img {
+    width: 270px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  & .message {
+    margin-top: 30px;
+    color: red;
+    background: #ffe5e5;
+    // padding: 6px 32px;
+    padding: 9px 64px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 7px;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
